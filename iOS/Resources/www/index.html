@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+    <body style="background-color: #bbbbbb;">
+        <br />
+        <br />
+        <br />
+        <input 
+            type="button" 
+            value="Invoke Native" 
+            style="width: 100%; font-size: 18px; padding: 6px;" 
+            onclick="invokeNative('Hello!');">
+        <br />
+        <br />
+        <center>
+            <span id="msg" style="font-size: 18px;">Ready.</span>
+        </center>
+
+
+     <script>
+        function invokeWeb(param) {
+            document.getElementById('msg').innerHTML = param;
+            setTimeout(function() {
+                document.getElementById('msg').innerHTML = 'Ready';
+            }, 1000);
+        }
+    </script>
+    </body>
+</html>
